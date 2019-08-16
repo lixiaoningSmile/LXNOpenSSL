@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LXNOpenSSL_Example' do
+  pod 'LXNOpenSSL', :path => '../'
+
+  target 'LXNOpenSSL_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
