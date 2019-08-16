@@ -1,0 +1,6 @@
+framework module Pods_LXNOpenSSL_Tests {
+  umbrella header "Pods-LXNOpenSSL_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LXNOpenSSL'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LXNOpenSSL.'
+  s.summary          = 'openssl'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: openssl
                        DESC
 
-  s.homepage         = 'https://github.com/lixiaoningSmile/LXNOpenSSL'
+  s.homepage         = 'https://github.com/lixiaoningSmile/LXNOpenSSL.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lixiaoningSmile' => '185896739@qq.com' }
@@ -30,7 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LXNOpenSSL/Classes/**/*'
+    s.source_files = 'LXNOpenSSL/Classes/openssl/**/*'
+    s.public_header_files = 'LXNOpenSSL/Classes/openssl/**/*.h'
+    s.ios.preserve_paths      = 'LXNOpenSSL/Classes/StaticLibrary/libcrypto.a', 'LXNOpenSSL/Classes/StaticLibrary/libssl.a'
+    s.ios.vendored_libraries  = 'LXNOpenSSL/Classes/StaticLibrary/libcrypto.a', 'LXNOpenSSL/Classes/StaticLibrary/libssl.a'
+    s.libraries = 'ssl', 'crypto'
+    s.static_framework = true
+    s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'LXNOpenSSL' => ['LXNOpenSSL/Assets/*.png']

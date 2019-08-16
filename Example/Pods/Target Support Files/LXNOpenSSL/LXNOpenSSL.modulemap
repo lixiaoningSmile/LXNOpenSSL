@@ -1,0 +1,6 @@
+framework module LXNOpenSSL {
+  umbrella header "LXNOpenSSL-umbrella.h"
+
+  export *
+  module * { export * }
+}

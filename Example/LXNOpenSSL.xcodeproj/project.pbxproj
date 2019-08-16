@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		33CD872B47E05410DB221D79 /* Pods-LXNOpenSSL_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNOpenSSL_Example.debug.xcconfig"; path = "Target Support Files/Pods-LXNOpenSSL_Example/Pods-LXNOpenSSL_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4D6AF069E0504B0175BFA1BE /* Pods-LXNOpenSSL_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNOpenSSL_Example.release.xcconfig"; path = "Target Support Files/Pods-LXNOpenSSL_Example/Pods-LXNOpenSSL_Example.release.xcconfig"; sourceTree = "<group>"; };
-		516836B503AC2B1D11411E72 /* LXNOpenSSL.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LXNOpenSSL.podspec; path = ../LXNOpenSSL.podspec; sourceTree = "<group>"; };
+		516836B503AC2B1D11411E72 /* LXNOpenSSL.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LXNOpenSSL.podspec; path = ../LXNOpenSSL.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5D79D51C4BA1B82D065372D0 /* Pods_LXNOpenSSL_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXNOpenSSL_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LXNOpenSSL_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXNOpenSSL_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C1984E6C4715266825FFB9E /* Pods-LXNOpenSSL_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNOpenSSL_Tests.release.xcconfig"; path = "Target Support Files/Pods-LXNOpenSSL_Tests/Pods-LXNOpenSSL_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		842783EFD470D310FD12BF75 /* Pods_LXNOpenSSL_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXNOpenSSL_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86F59FC21B5A0596738CDF54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		86F59FC21B5A0596738CDF54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A117ECB37639B74393A03077 /* Pods-LXNOpenSSL_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNOpenSSL_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LXNOpenSSL_Tests/Pods-LXNOpenSSL_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE62420B4611B853C6766578 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE62420B4611B853C6766578 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A117ECB37639B74393A03077 /* Pods-LXNOpenSSL_Tests.debug.xcconfig */,
 				7C1984E6C4715266825FFB9E /* Pods-LXNOpenSSL_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E04B1D4578C1C96BADBF5F03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,24 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E04B1D4578C1C96BADBF5F03 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LXNOpenSSL_Example/Pods-LXNOpenSSL_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LXNOpenSSL/LXNOpenSSL.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LXNOpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LXNOpenSSL_Example/Pods-LXNOpenSSL_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
