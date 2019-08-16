@@ -1,5 +1,5 @@
 PODS:
-  - LXNOpenSSL (0.1.0)
+  - LXNOpenSSL (1.0.0)
 
 DEPENDENCIES:
   - LXNOpenSSL (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LXNOpenSSL: 00ab82045dfa4a2120e93045f85e2569cd82e7a5
+  LXNOpenSSL: c352e5a3ec0d1b1f3b9e64771e5dec28158caaaf
 
 PODFILE CHECKSUM: 214db2f85b46e09671541ef6a79b7819b2da1c3a
 
