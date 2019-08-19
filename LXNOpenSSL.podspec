@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LXNOpenSSL'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'openssl'
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,9 @@ TODO: openssl
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LXNOpenSSL/Classes/openssl/**/*'
-  #s.vendored_frameworks = 'LXNOpenSSL/Classes/OpenSSL.framework'
-  s.vendored_libraries  = 'LXNOpenSSL/Classes/libcrypto.a', 'LXNOpenSSL/Classes/libssl.a'
+  #s.source_files = 'LXNOpenSSL/Classes/**/*'
+  s.vendored_frameworks = 'LXNOpenSSL/Classes/OpenSSL.framework'
+  #s.vendored_libraries  = 'LXNOpenSSL/Classes/libcrypto.a', 'LXNOpenSSL/Classes/libssl.a'
   s.static_framework = true
   # s.source_files = 'LXNOpenSSL/Classes/openssl/**/*'
   # s.public_header_files = 'LXNOpenSSL/Classes/openssl/**/*.h'

@@ -1,6 +1,6 @@
 {
   "name": "LXNOpenSSL",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "openssl",
   "description": "TODO: openssl",
   "homepage": "https://github.com/lixiaoningSmile/LXNOpenSSL.git",
@@ -13,15 +13,11 @@
   },
   "source": {
     "git": "https://github.com/lixiaoningSmile/LXNOpenSSL.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LXNOpenSSL/Classes/openssl/**/*",
-  "vendored_libraries": [
-    "LXNOpenSSL/Classes/libcrypto.a",
-    "LXNOpenSSL/Classes/libssl.a"
-  ],
+  "vendored_frameworks": "LXNOpenSSL/Classes/OpenSSL.framework",
   "static_framework": true
 }
