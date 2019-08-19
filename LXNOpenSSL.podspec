@@ -30,7 +30,9 @@ TODO: openssl
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks = 'LXNOpenSSL/Classes/OpenSSL.framework'
+  s.source_files = 'LXNOpenSSL/Classes/openssl/**/*'
+  #s.vendored_frameworks = 'LXNOpenSSL/Classes/OpenSSL.framework'
+  s.vendored_libraries  = 'LXNOpenSSL/Classes/libcrypto.a', 'LXNOpenSSL/Classes/libssl.a'
   s.static_framework = true
   # s.source_files = 'LXNOpenSSL/Classes/openssl/**/*'
   # s.public_header_files = 'LXNOpenSSL/Classes/openssl/**/*.h'

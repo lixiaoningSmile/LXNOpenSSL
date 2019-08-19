@@ -18,6 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "vendored_frameworks": "LXNOpenSSL/Classes/OpenSSL.framework",
+  "source_files": "LXNOpenSSL/Classes/openssl/**/*",
+  "vendored_libraries": [
+    "LXNOpenSSL/Classes/libcrypto.a",
+    "LXNOpenSSL/Classes/libssl.a"
+  ],
   "static_framework": true
 }
